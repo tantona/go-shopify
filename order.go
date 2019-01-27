@@ -52,6 +52,7 @@ type OrderCountOptions struct {
 // A struct for all available order list options.
 // See: https://help.shopify.com/api/reference/order#index
 type OrderListOptions struct {
+	Name              string    `url:"name,omitempty"`
 	Page              int       `url:"page,omitempty"`
 	Limit             int       `url:"limit,omitempty"`
 	SinceID           int       `url:"since_id,omitempty"`
